@@ -1,13 +1,159 @@
-# React + Vite
+# EchoSphere
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+EchoSphere is an anonymous discussion platform where users can engage in conversations about current and hot topics. The platform features a cyberpunk-themed UI, allowing users to take sides in discussions, view summaries, and participate in debates with potential rewards.
 
-Currently, two official plugins are available:
+![EchoSphere Logo](public/images/logo.svg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Anonymous Discussions**: Engage in conversations without revealing your identity
+- **Topic Sides**: Take a position on any discussion topic
+- **Summaries**: Quick summaries for new users to catch up on ongoing discussions
+- **Debate Points**: Highlighted arguments for and against topics
+- **Reward System**: Winners of debates get a coffee from a community pot
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# EchoSphere-frontend
+## Tech Stack
+
+### Frontend
+- React.js
+- Vite
+- Tailwind CSS with cyberpunk theme
+- React Router
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+
+## Project Structure
+
+```
+├── backend/
+│   ├── app.js
+│   ├── controllers/
+│   ├── db/
+│   ├── middlewares/
+│   ├── models/
+│   ├── routes/
+│   ├── services/
+│   └── server.js
+├── frontend/
+│   ├── public/
+│   │   ├── fonts/
+│   │   └── images/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── contexts/
+│   │   ├── hooks/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── utils/
+│   │   ├── App.jsx
+│   │   ├── index.css
+│   │   ├── main.jsx
+│   │   └── router.jsx
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package.json
+│   ├── tailwind.config.js
+│   └── vite.config.js
+└── README.md
+```
+
+## Setup & Installation
+
+### Prerequisites
+- Node.js (v16+)
+- npm or yarn
+- MongoDB
+
+### Backend Setup
+1. Navigate to backend directory:
+   ```
+   cd backend
+   ```
+
+2. Install dependencies:
+   ```
+   npm install
+   ```
+
+3. Create a `.env` file with the following variables:
+   ```
+   PORT=3001
+   MONGODB_URI=mongodb://localhost:27017/echosphere
+   JWT_SECRET=your_jwt_secret
+   ```
+
+4. Start the backend server:
+   ```
+   npm start
+   ```
+
+### Frontend Setup
+1. Navigate to frontend directory:
+   ```
+   cd frontend
+   ```
+
+2. Install dependencies:
+   ```
+   npm install
+   ```
+
+3. Start the development server:
+   ```
+   npm run dev
+   ```
+
+4. Open your browser and visit:
+   ```
+   http://localhost:5173
+   ```
+
+## Cyberpunk Theme
+
+The UI follows a cyberpunk aesthetic with:
+- Neon colors (cyan, pink, purple)
+- Animated elements (glowing text, flashing letters)
+- Grid backgrounds
+- Futuristic form elements
+- Custom font styling
+
+## Authentication
+
+EchoSphere offers two authentication pages:
+- **Login**: For existing users
+- **Register**: For new users to create an account
+
+Both pages maintain the cyberpunk aesthetic with animated elements and neon styling.
+
+## Developer Notes
+
+### Tailwind CSS Configuration
+- The project uses a custom Tailwind configuration for the cyberpunk theme
+- The configuration is in `tailwind.config.js`
+- Custom utilities are defined in `src/index.css`
+
+### Adding New Pages
+1. Create a new component in the `src/pages` directory
+2. Add the route in `src/router.jsx`
+3. Maintain the cyberpunk theme with utility classes
+
+### API Integration
+- API services are in `src/services`
+- Authentication service is in `src/services/auth.service.js`
+- Use the API utility in `src/services/api.js` for HTTP requests
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/your-feature-name`
+3. Commit your changes: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin feature/your-feature-name`
+5. Open a pull request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
