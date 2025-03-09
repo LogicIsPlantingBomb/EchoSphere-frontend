@@ -2,7 +2,6 @@
 
 EchoSphere is an anonymous discussion platform where users can engage in conversations about current and hot topics. The platform features a cyberpunk-themed UI, allowing users to take sides in discussions, view summaries, and participate in debates with potential rewards.
 
-![EchoSphere Logo](public/images/logo.svg)
 
 ## Features
 
