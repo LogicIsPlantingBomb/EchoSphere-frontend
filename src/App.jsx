@@ -1,10 +1,17 @@
-import React from 'react';
-import useState from 'react';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./components/login";
+import Register from "./components/register";
+import Home from "./pages/home";
 function App() {
   return (
-	  <div>
-	  	<h1 className="bg-zinc-600">hello</h1>
-	  </div>
+    <Router>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+	<Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
+
 export default App;
