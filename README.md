@@ -3,22 +3,20 @@
 
 EchoSphere is an anonymous discussion platform where users can engage in conversations about current and hot topics. The platform features a cyberpunk-themed UI, allowing users to take sides in discussions, view summaries, and participate in debates with potential rewards.
 
+# EchoSphere Frontend 🔥  
 
-## Features
+### **Anonymous Debates on Trending Topics**  
 
-- **Anonymous Discussions**: Engage in conversations without revealing your identity
-- **Topic Sides**: Take a position on any discussion topic
-- **Summaries**: Quick summaries for new users to catch up on ongoing discussions
-- **Debate Points**: Highlighted arguments for and against topics
-- **Reward System**: Winners of debates get a coffee from a community pot
+EchoSphere is a cyberpunk-themed platform where users can **discuss hot topics, take sides, debate in real-time, and even place virtual bets** on the winning arguments.  
 
-## Tech Stack
+---
 
-### Frontend
-- React.js
-- Vite
-- Tailwind CSS with cyberpunk theme
-- React Router
+## **🎨 UI Theme**  
+- **Dark Mode** with **gray, red, and blue neon accents**  
+- **Cyberpunk Fonts & Animated Effects**  
+- **Minimal yet futuristic design**  
+
+
 
 ### Backend
 - Node.js
