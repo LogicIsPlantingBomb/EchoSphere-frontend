@@ -1,157 +1,132 @@
-# EchoSphere
+# ECHOSPHERE - Cyberpunk Social Network
+
+![banner](https://github.com/user-attachments/assets/fe1a9319-13b3-4d08-a58a-d73625e49122)
 
 
-EchoSphere is an anonymous discussion platform where users can engage in conversations about current and hot topics. The platform features a cyberpunk-themed UI, allowing users to take sides in discussions, view summaries, and participate in debates with potential rewards.
-
-# EchoSphere Frontend 🔥  
-
-### **Anonymous Debates on Trending Topics**  
-
-EchoSphere is a cyberpunk-themed platform where users can **discuss hot topics, take sides, debate in real-time, and even place virtual bets** on the winning arguments.  
+**ECHOSPHERE** is a decentralized, cyberpunk-themed social network where users can engage in anonymous discourse, debate contentious topics, and stake crypto on winning arguments. The platform is designed with a futuristic aesthetic, featuring glitch effects, neon colors, and holographic elements.
 
 ---
 
-## **🎨 UI Theme**  
-- **Dark Mode** with **gray, red, and blue neon accents**  
-- **Cyberpunk Fonts & Animated Effects**  
-- **Minimal yet futuristic design**  
+## 🚀 Features
 
+- **Anonymous Posting**: Share your thoughts without revealing your identity.
+- **Debate System**: Engage in real-time debates and track your wins over time.
+- **Crypto Staking**: Bet digital currency on your position in debates.
+- **Neon Aesthetic**: A visually stunning cyberpunk-inspired design.
+- **Dynamic Effects**: Glitch animations, scan lines, and holographic elements.
+- **Interactive Graphs**: Track debate performance with dynamic charts.
 
+---
 
-### Backend
-- Node.js
-- Express.js
-- MongoDB
+## 🛠 Technologies Used
 
-## Project Structure
+- **Frontend**: React, Tailwind CSS
+- **Charting**: Chart.js
+- **Routing**: React Router
+- **Animations**: CSS and JavaScript
+- **Icons**: Heroicons
 
-```
-├── backend/
-│   ├── app.js
-│   ├── controllers/
-│   ├── db/
-│   ├── middlewares/
-│   ├── models/
-│   ├── routes/
-│   ├── services/
-│   └── server.js
-├── frontend/
-│   ├── public/
-│   │   ├── fonts/
-│   │   └── images/
-│   ├── src/
-│   │   ├── assets/
-│   │   ├── components/
-│   │   ├── contexts/
-│   │   ├── hooks/
-│   │   ├── pages/
-│   │   ├── services/
-│   │   ├── utils/
-│   │   ├── App.jsx
-│   │   ├── index.css
-│   │   ├── main.jsx
-│   │   └── router.jsx
-│   ├── eslint.config.js
-│   ├── index.html
-│   ├── package.json
-│   ├── tailwind.config.js
-│   └── vite.config.js
-└── README.md
-```
+---
 
-## Setup & Installation
+## 📥 Installation
 
-### Prerequisites
-- Node.js (v16+)
-- npm or yarn
-- MongoDB
+Follow these steps to set up the project locally:
 
-### Backend Setup
-1. Navigate to backend directory:
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/echosphere.git
+   cd echosphere
    ```
-   cd backend
-   ```
-
-2. Install dependencies:
-   ```
+2. **Install dependencies**:
+   ```bash
    npm install
    ```
-
-3. Create a `.env` file with the following variables:
-   ```
-   PORT=3001
-   MONGODB_URI=mongodb://localhost:27017/echosphere
-   JWT_SECRET=your_jwt_secret
-   ```
-
-4. Start the backend server:
-   ```
-   npm start
-   ```
-
-### Frontend Setup
-1. Navigate to frontend directory:
-   ```
-   cd frontend
-   ```
-
-2. Install dependencies:
-   ```
-   npm install
-   ```
-
-3. Start the development server:
-   ```
+3. **Start the development server**:
+   ```bash
    npm run dev
    ```
+4. **Open the app**:
+   - Visit `http://localhost:3000` in your browser.
 
-4. Open your browser and visit:
+---
+
+## 📂 Project Structure
+
+```
+echosphere/
+├── App.jsx
+├── components/
+│   ├── Login.jsx
+│   └── Register.jsx
+├── pages/
+│   ├── Home.jsx
+│   ├── Feed.jsx
+│   ├── Discussion.jsx
+│   └── Profile.jsx
+├── utils/
+│   └── chartConfig.js
+├── index.css
+└── main.jsx
+```
+
+---
+
+## 📌 Usage
+
+### 📄 Pages
+- **Home**: The landing page with an overview of the platform.
+- **Feed**: A feed of posts and debates from other users.
+- **Discussion**: A detailed view of a specific debate or discussion.
+- **Profile**: User profile with stats, posts, and debate performance graphs.
+
+### 🔹 Key Features
+- **Create Posts**: Share your thoughts and tag them with relevant topics.
+- **Debate Wins Graph**: Track your debate performance over time.
+- **Edit Profile**: Customize your profile information and settings.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/YourFeatureName
    ```
-   http://localhost:5173
+3. Commit your changes:
+   ```bash
+   git commit -m 'Add some feature'
    ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+5. Open a pull request.
 
-## Cyberpunk Theme
+---
 
-The UI follows a cyberpunk aesthetic with:
-- Neon colors (cyan, pink, purple)
-- Animated elements (glowing text, flashing letters)
-- Grid backgrounds
-- Futuristic form elements
-- Custom font styling
+## 📜 License
 
-## Authentication
+This project is licensed under the MIT License. See the `LICENSE` file for details.
 
-EchoSphere offers two authentication pages:
-- **Login**: For existing users
-- **Register**: For new users to create an account
+---
 
-Both pages maintain the cyberpunk aesthetic with animated elements and neon styling.
+## 💡 Acknowledgments
 
-## Developer Notes
+Inspired by cyberpunk aesthetics and decentralized social networks.
 
-### Tailwind CSS Configuration
-- The project uses a custom Tailwind configuration for the cyberpunk theme
-- The configuration is in `tailwind.config.js`
-- Custom utilities are defined in `src/index.css`
+Built with ❤️ by [Your Name].
 
-### Adding New Pages
-1. Create a new component in the `src/pages` directory
-2. Add the route in `src/router.jsx`
-3. Maintain the cyberpunk theme with utility classes
+---
 
-### API Integration
-- API services are in `src/services`
-- Authentication service is in `src/services/auth.service.js`
-- Use the API utility in `src/services/api.js` for HTTP requests
+## 📸 Screenshots
 
-## Contributing
+![home](https://github.com/user-attachments/assets/4150552c-7996-44c0-91e3-13cdadd09a83)
 
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/your-feature-name`
-3. Commit your changes: `git commit -m 'Add some feature'`
-4. Push to the branch: `git push origin feature/your-feature-name`
-5. Open a pull request
+![profile](https://github.com/user-attachments/assets/e52aa9eb-e22d-4e41-87df-7bd20b72b6d1)
 
-## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+Enjoy exploring **ECHOSPHERE**! 🚀
+
