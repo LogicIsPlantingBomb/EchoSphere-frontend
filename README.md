@@ -1,4 +1,4 @@
-# ECHOSPHERE - Cyberpunk Social Network
+# ECHOSPHERE -  Social Network
 
 ![banner](https://github.com/user-attachments/assets/fe1a9319-13b3-4d08-a58a-d73625e49122)
 
