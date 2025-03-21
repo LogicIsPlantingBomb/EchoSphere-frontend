@@ -117,7 +117,7 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 Inspired by cyberpunk aesthetics and decentralized social networks.
 
-Built with ❤️ by [Your Name].
+Built with ❤️ by [Dhruv Bhardwaj].
 
 ---
 
