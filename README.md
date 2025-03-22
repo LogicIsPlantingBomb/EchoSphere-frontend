@@ -76,6 +76,7 @@ echosphere/
 ### 📄 Pages
 - **Home**: The landing page with an overview of the platform.
 - **Feed**: A feed of posts and debates from other users.
+- 
 - **Discussion**: A detailed view of a specific debate or discussion.
 - **Profile**: User profile with stats, posts, and debate performance graphs.
 
